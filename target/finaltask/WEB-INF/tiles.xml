@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="base" template="/WEB-INF/layout/page.jsp">
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+    </definition>
+
+    <definition name="home" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/mains/home.jsp" />
+    </definition>
+
+    <definition name="professor" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/mains/professor.jsp" />
+    </definition>
+
+    <definition name="student" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/mains/student.jsp" />
+    </definition>
+
+
+    <definition name="auth/login" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/auth/login.jsp" />
+    </definition>
+
+    <definition name="auth/logout" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/auth/logout.jsp" />
+    </definition>
+
+    <definition name="auth/register" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/auth/register.jsp" />
+    </definition>
+
+</tiles-definitions>
